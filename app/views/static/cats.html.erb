@@ -1,0 +1,9 @@
+<% provide(:title, "Cats") %>
+<h1>Cats</h1>
+
+<h2>These some real cool cats.</h2>
+<p> Add "/(number)" to the url to see a specific number of crazy cool cats </p>
+
+<% @cats.each do |cat| %>
+  <img src="<%= cat.url %>" alt="Cat pic">
+<% end %>
