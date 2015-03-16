@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'coffee-script-source', '1.8.0'
 
 gem 'rails_12factor', group: :production
+
 gem 'cat_api', '~> 0.1.0'
 
 gem 'pg', group: :production
