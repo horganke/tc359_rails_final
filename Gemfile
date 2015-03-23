@@ -27,13 +27,13 @@ gem 'rails_12factor', group: :production
 
 gem 'cat_api', '~> 0.1.0'
 
-gem 'pg', group: :production
-
 group :development, :test do
-	gem 'byebug'
-	gem 'web-console', '~> 2.0'
-	gem 'spring'
-	gem 'sqlite3'
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
