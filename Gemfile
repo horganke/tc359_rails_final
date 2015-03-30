@@ -25,6 +25,14 @@ gem 'coffee-script-source', '1.8.0'
 
 gem 'cat_api', '~> 0.1.0'
 
+gem 'bcrypt', '~> 3.1.7'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end
+
 group :development, :test do
   gem 'sqlite3'
 end
