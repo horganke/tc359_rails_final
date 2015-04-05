@@ -25,5 +25,8 @@
   <%= @character.evil %>
 </p>
 
-<%= link_to 'Edit', edit_character_path(@character) %> |
+
+<% if user_signed_in? %>
+  <%= link_to 'Edit', edit_character_path(@character) %> |
+<%end%>
 <%= link_to 'Back', characters_path %>
