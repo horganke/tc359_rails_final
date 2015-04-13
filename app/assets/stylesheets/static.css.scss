@@ -2,52 +2,230 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
+.default{
 	
   background-color: grey;
-}
 
-ul{
-	
-  list-style-type: none;
-  text-align: center;
+  ul{
+  	
+    list-style-type: none;
+    text-align: center;
 
-	li{
-
-  	display: inline;
-  	border-right: 1px solid black;
-
-  	&:first-child{ 
-  		border-left: 1px solid black;
-  	}
-
-  	a{
-  		color: DarkRed;
-  		text-decoration: none;
-  		padding: 10px;
-  		font-size: 20px;
-
-  		&:focus{
-  			color:black;
-  		}
-
-  	}
+    li{
+      display: inline;
+    }
   }
+
+  #links{
+    li{
+
+      display: inline;
+      border-right: 1px solid black;
+      padding: 10px;
+
+      &:first-child{ 
+        border-left: 1px solid black;
+      }
+
+      a{
+        color: DarkRed;
+        text-decoration: none;
+        font-size: 20px;
+
+        &:hover{
+          color:black;
+          background-color: grey;
+        }
+
+      }
+    }
+  }
+
+  h1{
+
+    font-size: 36px;
+    color: navy;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
 }
 
-h1{
+.theme1{
+  
+  background-color: SeaGreen ;
 
-  font-size: 36px;
-  color: navy;
-  font-weight: bold;
+  ul{
+    
+    list-style-type: none;
+    text-align: center;
+
+    li{
+      display: inline;
+    }
+  }
+
+  #links{
+    li{
+
+      display: inline;
+      border-right: 1px solid white;
+      padding: 10px;
+
+      &:first-child{ 
+        border-left: 1px solid white;
+      }
+
+      a{
+        color: black ;
+        text-decoration: none;
+        font-size: 20px;
+
+        &:hover{
+          color:black;
+          background-color: white;
+        }
+
+      }
+    }
+  }
+
+  h1{
+
+    font-size: 36px;
+    color: GoldenRod ;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
 }
 
-h2{
-  font-size: 24px;
-  font-style: italic;
+.theme2{
+  
+  background-color: Bisque  ;
+
+  ul{
+    
+    list-style-type: none;
+    text-align: center;
+
+    li{
+      display: inline;
+    }
+  }
+
+  #links{
+    li{
+
+      display: inline;
+      border-right: 1px solid DarkGray   ;
+      padding: 10px;
+
+      &:first-child{ 
+        border-left: 1px solid DarkGray   ;
+      }
+
+      a{
+        color: indigo ;
+        text-decoration: none;
+        font-size: 20px;
+
+        &:hover{
+          color:OrangeRed ;
+          background-color: Bisque;
+        }
+
+      }
+    }
+  }
+
+  h1{
+
+    font-size: 36px;
+    color: Chocolate  ;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
 }
 
-p{
-  font-size: 16px;
-}
+.theme3{
+  
+  background-color: RosyBrown   ;
 
+  ul{
+    
+    list-style-type: none;
+    text-align: center;
+
+    li{
+      display: inline;
+    }
+  }
+
+  #links{
+    li{
+
+      display: inline;
+      border-right: 1px solid white;
+      padding: 10px;
+
+      &:first-child{ 
+        border-left: 1px solid white;
+      }
+
+      a{
+        color: darkslateblue  ;
+        text-decoration: none;
+        font-size: 20px;
+
+        &:hover{
+          color:darkorange;
+          background-color: white;
+        }
+
+      }
+    }
+  }
+
+  h1{
+
+    font-size: 36px;
+    color: brown ;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+}

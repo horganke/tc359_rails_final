@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id = "changeTheme" class="default">
 
 <% flash.each do |type, message| %>
   <div class="<%= type %>">
@@ -22,13 +22,18 @@
 <% end %>
 
 <ul>
+  <li><button onclick="ChangeTheme('default');" > Default </button></li>
+  <li><button onclick="ChangeTheme('theme1');" > Theme1 </button></li>
+  <li><button onclick="ChangeTheme('theme2');" > Theme2 </button></li>
+  <li><button onclick="ChangeTheme('theme3');" > Theme3  </button></li>
+</ul>
+
+<ul id = "links">
   <li><%= link_to 'Home', root_path %></li>
   <li><%= link_to 'About', about_path %></li>
   <li><%= link_to 'Cat Pictures', cats_path %></li>
   <li><%= link_to 'Characters DB', characters_path %></li>
 </ul>
-
-
 
 <%= yield %>
 
