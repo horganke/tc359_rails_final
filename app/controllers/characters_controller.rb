@@ -5,7 +5,11 @@ class CharactersController < ApplicationController
   # GET /characters
   # GET /characters.json
   def index
-    @characters = Character.all
+    if params[:search]
+      @characters = Character.search(params[:search]).order("created_at DESC")
+    else
+      @characters = Character.order("created_at DESC")
+    end
   end
 
   # GET /characters/1
