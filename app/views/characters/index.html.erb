@@ -2,6 +2,7 @@
 
 <h1>Listing Characters</h1>
 
+
 <table>
    <% if not (@characters.empty?) %>
   <thead>
@@ -38,6 +39,10 @@
     <% end %>
   </tbody>
 </table>
+
+<br>
+
+<%= paginate @characters %>
 
 <br>
 <% if user_signed_in? %>

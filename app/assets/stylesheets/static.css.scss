@@ -6,6 +6,15 @@
 	
   background-color: grey;
 
+  .pagination{
+    span{
+      border: 1px solid black;
+      background-color: white;
+      margin: 5px;
+      padding: 5px;
+    }
+  }
+
   ul{
   	
     list-style-type: none;

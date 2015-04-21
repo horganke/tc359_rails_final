@@ -27,6 +27,8 @@ gem 'cat_api', '~> 0.1.0'
 
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'kaminari'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
