@@ -29,6 +29,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'kaminari'
 
+gem 'passenger'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
