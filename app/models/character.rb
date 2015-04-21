@@ -3,6 +3,6 @@ class Character < ActiveRecord::Base
 
   def self.search(query)
     # where(:title, query) -> This would return an exact match of the query
-    where("name like ? OR powers like ?", "%#{query}%" , "%#{query}%")
+    where("lower(name) like ? OR lower(powers) like ?", "%#{query.downcase}%" , "%#{query.downcase}%")
   end
 end
