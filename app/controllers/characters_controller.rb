@@ -6,7 +6,7 @@ class CharactersController < ApplicationController
   # GET /characters.json
   def index
     if params[:search]
-      @characters = Character.search(params[:search]).order("created_at DESC")
+      @characters = Character.search(params[:search]).order("created_at DESC").page(params[:page]).per(5)
     else
       @characters = Character.order("created_at DESC").page(params[:page]).per(5)
     end
